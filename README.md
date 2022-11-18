@@ -11,4 +11,9 @@ wsl --list --online
 # download one you like
 wsl --install -d Ubuntu-20.04
 ```
-- upgrade wsl to wsl2(https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)
+- [x64 マシン用 WSL2 Linux カーネル更新プログラム パッケージ](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)
+  ```shell
+  wsl --set-default-version 2
+  wsl -l -v
+  wsl --set-version Ubuntu-20.04 2
+  ```
